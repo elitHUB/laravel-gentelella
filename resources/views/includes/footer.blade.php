@@ -1,6 +1,7 @@
 <footer>
     <div class="pull-right">
-        Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+        <p>©@php echo date("Y"); @endphp All Rights Reserved. {{config('app.name')}}. Privacy and
+            Terms</p>
     </div>
     <div class="clearfix"></div>
 </footer>

@@ -1,50 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <!-- Meta, title, CSS, favicons, etc. -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Gentellela Alela! | </title>
+    <title>Gentellela Alela! | </title>
 
-        <!-- Bootstrap -->
-        <link href="{{ asset("css/bootstrap.min.css") }}" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link href="{{ asset("css/font-awesome.min.css") }}" rel="stylesheet">
-        <!-- Custom Theme Style -->
-        <link href="{{ asset("css/gentelella.min.css") }}" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="{{ asset("css/bootstrap.min.css") }}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{{ asset("css/font-awesome.min.css") }}" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="{{ asset("css/gentelella.min.css") }}" rel="stylesheet">
 
-        @stack('stylesheets')
+    <link href="{{asset('css/nprogress.css')}}" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="{{asset('css/green.css')}}" rel="stylesheet">
 
-    </head>
+    <!-- bootstrap-progressbar -->
+    <link href="{{asset('css/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="{{asset('css/jqvmap.min.css')}}" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="{{asset('css/daterangepicker.css')}}" rel="stylesheet">
 
-    <body class="nav-md">
-        <div class="container body">
-            <div class="main_container">
+    @stack('stylesheets')
 
-                @include('includes/sidebar')
+</head>
 
-                @include('includes/topbar')
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
 
-                @yield('main_container')
+        @include('includes/sidebar')
 
-                @include('includes/footer')
+        @include('includes/topbar')
 
-            </div>
-        </div>
+        @yield('main_container')
 
-        <!-- jQuery -->
-        <script src="{{ asset("js/jquery.min.js") }}"></script>
-        <!-- Bootstrap -->
-        <script src="{{ asset("js/bootstrap.min.js") }}"></script>
-        <!-- Custom Theme Scripts -->
-        <script src="{{ asset("js/gentelella.min.js") }}"></script>
+        @include('includes/footer')
 
-        @stack('scripts')
+    </div>
+</div>
 
-    </body>
+<!-- jQuery -->
+<script src="{{ asset("js/jquery.min.js") }}"></script>
+<!-- Bootstrap -->
+<script src="{{ asset("js/bootstrap.min.js") }}"></script>
+<!-- Custom Theme Scripts -->
+<script src="{{ asset("js/gentelella.min.js") }}"></script>
+
+
+<script src="{{ asset("js/fastclick.js") }}"></script>
+<!-- NProgress -->
+<script src="{{ asset("js/nprogress.js") }}"></script>
+<!-- Chart.js -->
+<script src="{{ asset("js/Chart.min.js") }}"></script>
+<!-- gauge.js -->
+<script src="{{ asset("js/gauge.min.js") }}"></script>
+<!-- bootstrap-progressbar -->
+<script src="{{ asset("js/bootstrap-progressbar.min.js") }}"></script>
+<!-- iCheck -->
+<script src="{{ asset("js/icheck.min.js") }}"></script>
+<!-- Skycons -->
+<script src="{{ asset("js/skycons.js") }}"></script>
+<!-- Flot -->
+<script src="{{ asset("js/jquery.flot.js") }}"></script>
+<script src="{{ asset("js/jquery.flot.pie.js") }}"></script>
+<script src="{{ asset("js/jquery.flot.time.js") }}"></script>
+<script src="{{ asset("js/jquery.flot.stack.js") }}"></script>
+<script src="{{ asset("js/jquery.flot.resize.js") }}"></script>
+<!-- Flot plugins -->
+<script src="{{ asset("js/jquery.flot.orderBars.js") }}"></script>
+<script src="{{ asset("js/jquery.flot.spline.min.js") }}"></script>
+<script src="{{ asset("js/curvedLines.js") }}"></script>
+<!-- DateJS -->
+<script src="{{ asset("js/date.js") }}"></script>
+<!-- JQVMap -->
+<script src="{{ asset("js/jquery.vmap.js") }}"></script>
+<script src="{{ asset("js/jquery.vmap.world.js") }}"></script>
+<script src="{{ asset("js/jquery.vmap.sampledata.js") }}"></script>
+<!-- bootstrap-daterangepicker -->
+<script src="{{ asset("js/moment.min.js") }}"></script>
+<script src="{{ asset("js/daterangepicker.js") }}"></script>
+<script src="{{ asset("js/curvedLines.js") }}"></script>
+<script src="{{ asset("js/moment.min.js") }}"></script>
+<script src="{{ asset("js/custom.min.js") }}"></script>
+@stack('scripts')
+
+</body>
 </html>
